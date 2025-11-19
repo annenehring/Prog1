@@ -3,12 +3,6 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-.kotlin
-.idea/
 
 ### Eclipse ###
 .apt_generated
