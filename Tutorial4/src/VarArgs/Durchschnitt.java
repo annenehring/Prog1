@@ -34,6 +34,10 @@ public class Durchschnitt {
 
 
 
+
+
+
+
     public static void main(String[] args) {
 
 

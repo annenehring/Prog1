@@ -16,6 +16,8 @@ public class ÜbungRekusion {
     //5 * fak(4)
     //5 * 4 * fak(3)
     //5 * 4 * 3 * fak(2)
+    //5 * 4 * 3 * 2 * fak(1)
+    //5 * 4 * 3 * 2 * 1
 
     public static void main(String[] args) {
 

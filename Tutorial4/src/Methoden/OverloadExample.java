@@ -5,23 +5,16 @@ public class OverloadExample {
     TODO:Welche Methode wird aufgerufen?
      */
     //1
-    static void check(int a, int b) {
-        System.out.println("check(int, int)");
+    static void check(int a, int b) {System.out.println("check(int, int)");
     }
-
     //2
-    static void check(long a, long b) {
-        System.out.println("check(long, long)");
+    static void check(long a, long b) {System.out.println("check(long, long)");
     }
-
     //3
-    static void check(double a, double b) {
-        System.out.println("check(double, double)");
+    static void check(double a, double b) {System.out.println("check(double, double)");
     }
-
     //4
-    static void check(int a, double b) {
-        System.out.println("check(int, double)");
+    static void check(int a, double b) {System.out.println("check(int, double)");
     }
 
     //5
