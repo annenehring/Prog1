@@ -20,6 +20,10 @@ class Mutter {
         System.out.print("Ich bin " + this.name + " und bin " + this.alter + "Jahre alt");
     }
 
+    public void leaving(){
+
+    }
+
 }
 /*
 TODO: Erstellen Sie anschließend eine Klasse Kind, die von Mutter erbt und zusätzlich das Attribut
@@ -54,6 +58,8 @@ class Kind extends Mutter {
 
         Mutter b = new Kind("Paul", 3, "Autos");
         b.vorstellen();
+        b.leaving();
+
     }
 
 

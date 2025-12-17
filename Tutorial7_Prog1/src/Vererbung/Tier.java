@@ -47,12 +47,13 @@ class Katze extends Tier{
     }
 
     @Override
-      protected void beschreiben(){
+      public void beschreiben(){
         super.beschreiben();
         System.out.println(" und hat " + this.anzLeben + " Leben");
     }
 
      public static void main(String[] args) {
+
          Katze a = new Katze("Lisa", 9);
      }
 }
@@ -72,6 +73,7 @@ class Katzenbaby extends Katze{
     public void beschreiben(){
         super.beschreiben();
     }
+
 }
 
 
