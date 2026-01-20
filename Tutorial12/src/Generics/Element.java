@@ -1,24 +1,24 @@
 package Generics;
 
-public class Element {
+public class Element<T> {
 
-    final Integer value;
-    Element next;
+    final T value;
+    Element<T> next;
 
-    public Element(Integer value) {
+    public Element(T value) {
         this.value = value;
     }
 
-    public void append(Integer value) {
+    public void append(T value) {
         if (next == null) {
-            next = new Element(value);
+            next = new Element<T>(value);
         } else {
             next.append(value);
         }
     }
 
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         Element<Integer> a = new Element<>(1);
         a.append(2);
         a.append(3);
@@ -27,6 +27,6 @@ public class Element {
         b.append("B");
     }
 
-     */
+
 
 }

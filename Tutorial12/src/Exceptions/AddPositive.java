@@ -9,6 +9,13 @@ TODO: Programmieren Sie eine Methode addPositive, die zwei positive Integer addi
  */
 public class AddPositive {
 
+    public static int addPositive(int a, int b){
+        if(a<0||b<0){
+            throw new IllegalArgumentException("Nur positive Zahlen bitte ");
+        }else{
+            return a + b;
+        }
+    }
 
 
 
@@ -19,5 +26,25 @@ public class AddPositive {
      */
     public static void main(String[] args) {
 
+        try {
+            int a = IOTools.readInt("gib mir den ersten Wert: ");
+            int b = IOTools.readInt("gib mir den zweiten Wert: ");
+            System.out.println(addPositive(a, b));
+        } catch (IllegalArgumentException e) {
+            System.out.println("Fehler: " + e.getMessage());
+            main(args);
+        }
+
+        while (true) {
+            try {
+                int a = IOTools.readInt("gib mir den ersten Wert: ");
+                int b = IOTools.readInt("gib mir den zweiten Wert: ");
+                System.out.println(addPositive(a, b));
+                break;
+            } catch (IllegalArgumentException e) {
+                System.out.println("Fehler: " + e.getMessage());
+            }
+
+        }
     }
 }
