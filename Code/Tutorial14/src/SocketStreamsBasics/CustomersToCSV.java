@@ -22,7 +22,6 @@ public class CustomersToCSV {
      InputStreamReader
      FileReader
      BufferedReader
-     StringReader
 
      Writer
 
@@ -30,7 +29,6 @@ public class CustomersToCSV {
      FileWriter
      BufferedWriter
      PrintWriter
-     StringWriter
 
      BufferedReader + FileReader
      BufferedReader + InputStreamReader
